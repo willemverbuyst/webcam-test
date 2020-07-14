@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"
+    ></script>
+
+    <title>Passport Picture</title>
+  </head>
+  <body>
+    <div class="button-row">
+      <button id="activate-webcam">Turn on Camera</button>
+      <button id="take-picture">Take Picture</button>
+      <button id="de-activate-webcam">Stop Camera</button>
+    </div>
+    <div class="camera-section">
+      <video id="webcam" autoplay playsinline mute width="400"></video>
+
+      <canvas id="canvas" class="d-none"></canvas>
+      <div id="photo"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
